@@ -242,5 +242,24 @@
 
 </form>
 
+<!-- form: crea el formulario del validador; action: indica el servicio que recibe los datos; method: envía los datos mediante GET -->
+<form action="https://validator.w3.org/nu/" method="get">
+
+    <!-- url: permite introducir una dirección web -->
+    <label for="documento">URL de la web:</label>
+    <input type="url" id="documento" name="doc" value="PON_AQUI_TU_URL_DE_GITHUB_PAGES">
+
+    <br><br>
+
+    <!-- checkbox: permite marcar o desmarcar una opción -->
+    <input type="checkbox" id="codigo" name="showsource" value="yes">
+    <label for="codigo">Ver el código</label>
+
+    <br><br>
+
+    <button type="submit">Validar HTML</button>
+
+</form>
+
 </body>
 </html>
