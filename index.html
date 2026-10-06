@@ -213,5 +213,34 @@
 
 </form>
 
+<!-- form: crea el formulario de búsqueda; action: indica el buscador de OpenStreetMap; method: envía los datos mediante GET -->
+<form action="https://www.openstreetmap.org/search" method="get">
+
+    <!-- select: crea una lista desplegable de opciones -->
+    <label for="ciudad">Selecciona una ciudad:</label>
+    <select id="ciudad" name="query">
+
+        <!-- optgroup: agrupa las ciudades por provincia -->
+        <optgroup label="Alicante">
+
+            <!-- option: crea una opción; value: indica el valor que se envía -->
+            <option value="Elche">Elche</option>
+            <option value="Alicante">Alicante</option>
+
+        </optgroup>
+
+        <optgroup label="Valencia">
+
+            <option value="Valencia">Valencia</option>
+            <option value="Gandía">Gandía</option>
+
+        </optgroup>
+
+    </select>
+
+    <button type="submit">Buscar en el mapa</button>
+
+</form>
+
 </body>
 </html>
