@@ -15,6 +15,33 @@
 
             <!-- legend: establece el título del grupo de campos -->
             <legend>Datos personales by Quique</legend>
+            <!-- label: crea la etiqueta descriptiva de un campo; for: relaciona la etiqueta con el campo mediante su id -->
+<label for="nombre">Nombre:</label>
+
+<!-- input: crea un campo de entrada; type: indica el tipo de dato que acepta; id: identifica el campo; name: nombre con el que se envía el dato -->
+<!-- text: permite introducir texto; placeholder: muestra un texto de ayuda; required: obliga a rellenar el campo; autofocus: coloca el cursor automáticamente en el campo -->
+<!-- size: establece el ancho visible del campo; maxlength: establece el número máximo de caracteres -->
+<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required autofocus size="30" maxlength="40">
+
+<br><br>
+
+<!-- password: crea un campo para introducir contraseñas ocultando los caracteres; minlength: establece el número mínimo de caracteres -->
+<label for="contrasena">Contraseña:</label>
+<input type="password" id="contrasena" name="contrasena" minlength="8">
+
+<br><br>
+
+<!-- email: permite introducir una dirección de correo electrónico y comprobar su formato -->
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required>
+
+<br><br>
+
+<!-- tel: permite introducir un número de teléfono; pattern: establece un patrón que debe cumplir el valor -->
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+
+<br><br>
 
         </fieldset>
 
