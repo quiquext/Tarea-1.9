@@ -265,5 +265,9 @@
 
 <p>El problema de seguridad es que al utilizar GET los datos del formulario aparecen en la URL y pueden quedar guardados en el historial del navegador. Esto es especialmente peligroso para datos sensibles como las contraseñas, porque cualquier persona que tenga acceso al historial podría verlos. Para un formulario como este se recomienda utilizar POST, ya que los datos no se muestran en la URL.</p>
 
+<h2>¿Qué ocurre al enviar la inscripción con POST? Según el artículo, ¿qué tendría que haber en el servidor para procesar esos datos?</h2>
+
+<p>Al enviar la inscripción con POST, los datos no aparecen en la URL porque se envían en el cuerpo de la petición HTTP. En nuestra web aparece un error porque GitHub Pages es un alojamiento estático y no tiene un programa en el servidor que reciba y procese los datos. Para procesarlos tendría que existir código en el servidor, por ejemplo un programa en PHP, que recibiera los datos enviados mediante POST y los tratara.</p>
+
 </body>
 </html>
