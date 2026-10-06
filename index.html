@@ -136,6 +136,36 @@
 
 <br><br>
 
+<!-- select: crea una lista de opciones; multiple: permite seleccionar varias opciones -->
+<label for="modulos">Módulos:</label>
+<select id="modulos" name="modulos" multiple>
+
+    <!-- optgroup: agrupa opciones relacionadas; label: establece el nombre visible del grupo -->
+    <optgroup label="Módulos de informática">
+
+        <!-- option: crea una opción dentro de un select; value: valor que se envía; selected: selecciona una opción por defecto -->
+        <option value="programacion" selected>Programación</option>
+        <option value="bases-datos">Bases de datos</option>
+
+    </optgroup>
+
+    <optgroup label="Módulos de sistemas">
+
+        <option value="redes">Redes</option>
+        <option value="sistemas-operativos">Sistemas Operativos</option>
+
+    </optgroup>
+
+</select>
+
+<br><br>
+
+<!-- textarea: crea un campo de texto que permite escribir varias líneas; rows: establece el número de filas visibles; cols: establece el número de columnas visibles -->
+<label for="comentarios">Comentarios:</label>
+<textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+
+<br><br>
+
 </fieldset>
 
     </form>
