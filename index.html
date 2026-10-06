@@ -193,5 +193,25 @@
 
     </form>
 
+    <!-- form: crea el formulario de búsqueda; action: indica el buscador de Wikipedia; method: envía los datos mediante GET -->
+<form action="https://es.wikipedia.org/w/index.php" method="get">
+
+    <!-- search: crea un campo de búsqueda -->
+    <label for="busqueda">Buscar en Wikipedia:</label>
+    <input type="search" id="busqueda" name="search" list="sugerencias">
+
+    <!-- datalist: proporciona sugerencias para un campo de entrada -->
+    <datalist id="sugerencias">
+
+        <option value="Formulario web">
+        <option value="HTML">
+        <option value="Protocolo de transferencia de hipertexto">
+
+    </datalist>
+
+    <button type="submit">Buscar</button>
+
+</form>
+
 </body>
 </html>
